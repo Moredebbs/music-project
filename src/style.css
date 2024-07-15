@@ -5,6 +5,8 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -208,7 +210,11 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-
+  .grid-break {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
   section {
     padding: 30px;
   }
