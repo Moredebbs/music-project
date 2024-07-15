@@ -51,6 +51,7 @@ header a {
 }
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 main {
   background-color: white;
@@ -80,10 +81,53 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
+.btn {
+  display: block;
+  color: white;
+  background-color: #2d3d2c;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background: #f8f8f8;
+}
+.card {
+  background-color: white;
+  margin: 30px;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+.text-center {
+  text-align: center;
 }
 .grid-2-colomn {
   grid-template-columns: 1fr 1fr;
@@ -91,15 +135,19 @@ section {
 .grid-3-colomn {
   grid-template-columns: 1fr 4fr 1fr;
 }
+.grid-3-equal-colomn {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid {
   display: grid;
   grid-gap: 64px;
 }
+
 footer {
   color: white;
   background-image: linear-gradient(
-      rgba(45, 61, 44, 0.8),
-      rgba(45, 61, 44, 0.3)
+      rgba(45, 61, 44, 0.9),
+      rgba(45, 61, 44, 0.8)
     ),
     url("/images/piano.jpeg");
   background-repeat: no-repeat;
@@ -109,7 +157,7 @@ footer h3 {
   font-weight: 700;
   font-size: 20;
   line-height: 30px;
-  text-align: center;
+  color: white;
 }
 footer p {
   font-weight: 400;
@@ -148,8 +196,5 @@ footer a {
   }
   section {
     padding: 30px;
-  }
-  footer a {
-    text-align: center;
   }
 }
