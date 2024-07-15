@@ -34,6 +34,7 @@ header h3 {
   line-height: 1.5;
   margin: 0;
 }
+
 header a {
   font-weight: 700;
   font-size: 16px;
@@ -48,10 +49,50 @@ header a {
   margin: 32px;
   display: inline-block;
 }
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
 footer {
   color: white;
+  background-image: linear-gradient(
+      rgba(45, 61, 44, 0.8),
+      rgba(45, 61, 44, 0.3)
+    ),
+    url("/images/piano.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
 }
-@media (max-width: 800px) {
+footer h3 {
+  font-weight: 700;
+  font-size: 20;
+  line-height: 30px;
+  text-align: center;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16;
+  line-height: 24px;
+  opacity: 0.6;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
