@@ -190,6 +190,7 @@ footer a {
   color: white;
   opacity: 0.7;
 }
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -207,6 +208,7 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
+
   section {
     padding: 30px;
   }
@@ -220,7 +222,7 @@ footer a {
     aspect-ratio: 16/9;
   }
 }
-@media (max-width: 1300px) {
+@media (min-width: 900px) and (max-width: 1300px) {
   .grid-break {
     grid-template-columns: 1fr 1fr;
   }
