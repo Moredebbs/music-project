@@ -50,8 +50,9 @@ header a {
   display: inline-block;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
+  aspect-ratio: 1/1;
 }
 main {
   background-color: white;
@@ -118,13 +119,16 @@ section.secondary {
 }
 .card {
   background-color: white;
-  margin: 30px;
+  margin: 20px;
 }
 .card-body {
-  padding: 30px;
+  padding: 20px;
 }
 .card-footer {
   padding: 0 30px 30px;
+}
+.card-header.grid {
+  grid-gap: 0;
 }
 .text-center {
   text-align: center;
@@ -141,6 +145,11 @@ section.secondary {
 .grid {
   display: grid;
   grid-gap: 64px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0;
 }
 
 footer {
@@ -196,5 +205,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
