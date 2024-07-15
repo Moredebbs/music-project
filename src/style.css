@@ -151,6 +151,9 @@ section.secondary {
   aspect-ratio: 1/1;
   border-radius: 0;
 }
+.instagram-embed {
+  margin: 30px 0;
+}
 
 footer {
   color: white;
@@ -211,5 +214,16 @@ footer a {
   }
   .embed {
     aspect-ratio: 16/9;
+  }
+  .organ {
+    aspect-ratio: 16/9;
+  }
+}
+@media (max-width: 1300px) {
+  .grid-break {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hidden-instagram {
+    display: none;
   }
 }
